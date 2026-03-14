@@ -182,23 +182,18 @@ export default function App() {
                 <motion.div variants={fadeIn} initial="hidden" animate="visible" className="text-white text-base sm:text-xl md:text-3xl font-bold mb-3 sm:mb-4 font-sans tracking-tight">©{new Date().getFullYear()}</motion.div>
 
                 <motion.h1 variants={fadeIn} initial="hidden" animate="visible" className="text-[2.5rem] sm:text-[4rem] md:text-[8rem] lg:text-[10rem] font-bold tracking-tighter leading-[0.85] text-white">
-                  Créer au-Delà
+                  Créer au-Delà<br />
+                  <span className="inline-flex items-center gap-2 sm:gap-4 md:gap-8">de l'<span className="font-serif italic font-normal tracking-tight">Ordinaire</span></span>
                 </motion.h1>
 
-                <div className="w-full flex flex-col md:flex-row justify-between items-start md:items-end mt-3 md:mt-0 gap-6 md:gap-0">
-                  <motion.div variants={fadeIn} initial="hidden" animate="visible" className="pt-3 md:pt-0 pb-2 md:pb-4 lg:pb-8">
-                    <p className="text-gray-400 text-[13px] sm:text-sm md:text-base leading-relaxed max-w-[280px] sm:max-w-sm md:max-w-md">
-                      Des sites web sur-mesure qui transforment vos visiteurs en clients. Design haut de gamme, performance technique et accompagnement de A à Z — dans l'Yonne et partout en France.
-                    </p>
-                    <a href="#contact" className="inline-block mt-4 sm:mt-5 px-6 sm:px-7 py-2.5 sm:py-3 bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white font-semibold rounded-full text-xs sm:text-sm hover:from-violet-500 hover:to-fuchsia-500 transition-all duration-300 shadow-lg shadow-violet-900/30">
-                      Demander un devis gratuit
-                    </a>
-                  </motion.div>
-
-                  <motion.span aria-hidden="true" variants={fadeIn} initial="hidden" animate="visible" className="text-[2.5rem] sm:text-[4rem] md:text-[8rem] lg:text-[10rem] font-bold tracking-tighter leading-[0.85] text-white flex items-center gap-2 sm:gap-4 md:gap-8 justify-start md:justify-end w-full md:w-auto">
-                    de l'<span className="font-serif italic font-normal tracking-tight pr-2 sm:pr-4 md:pr-12">Ordinaire</span>
-                  </motion.span>
-                </div>
+                <motion.div variants={fadeIn} initial="hidden" animate="visible" className="pt-4 sm:pt-6 md:pt-8 pb-2 md:pb-4 lg:pb-8">
+                  <p className="text-gray-400 text-[13px] sm:text-sm md:text-base leading-relaxed max-w-[280px] sm:max-w-sm md:max-w-md">
+                    Des sites web sur-mesure qui transforment vos visiteurs en clients. Design haut de gamme, performance technique et accompagnement de A à Z — dans l'Yonne et partout en France.
+                  </p>
+                  <a href="#contact" className="inline-block mt-4 sm:mt-5 px-6 sm:px-7 py-2.5 sm:py-3 bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white font-semibold rounded-full text-xs sm:text-sm hover:from-violet-500 hover:to-fuchsia-500 transition-all duration-300 shadow-lg shadow-violet-900/30">
+                    Demander un devis gratuit
+                  </a>
+                </motion.div>
               </div>
 
             </div>
