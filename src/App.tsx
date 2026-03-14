@@ -148,7 +148,7 @@ export default function App() {
           </AnimatePresence>
 
           {/* Hero Content */}
-          <div className="relative flex flex-col justify-between min-h-[75vh] md:min-h-[85vh] w-full px-8 lg:px-16 pb-12 pt-32 z-10 overflow-hidden">
+          <div className="relative flex flex-col justify-between min-h-[85vh] md:min-h-[85vh] w-full px-5 sm:px-8 lg:px-16 pb-8 sm:pb-12 pt-24 sm:pt-32 z-10 overflow-hidden">
             {/* Video Background */}
             <video
               autoPlay
@@ -165,8 +165,8 @@ export default function App() {
 
             <div className="relative w-full h-full flex flex-col justify-center pt-8 md:pt-16 flex-1">
 
-              <div className="w-full flex flex-col md:flex-row justify-between items-end mb-8 md:mb-16 gap-8 md:gap-0">
-                <div className="hidden md:block w-1/3"></div>
+              <div className="hidden md:flex w-full flex-row justify-between items-end mb-16">
+                <div className="w-1/3"></div>
 
                 {/* Right side list */}
                 <div className="text-right flex flex-col items-end gap-3 text-[15px] font-medium text-gray-400">
@@ -179,24 +179,24 @@ export default function App() {
 
               {/* Main Title Area */}
               <div className="w-full flex flex-col items-start relative z-20">
-                <motion.div variants={fadeIn} initial="hidden" animate="visible" className="text-white text-xl md:text-3xl font-bold mb-4 font-sans tracking-tight">©{new Date().getFullYear()}</motion.div>
+                <motion.div variants={fadeIn} initial="hidden" animate="visible" className="text-white text-base sm:text-xl md:text-3xl font-bold mb-3 sm:mb-4 font-sans tracking-tight">©{new Date().getFullYear()}</motion.div>
 
-                <motion.h1 variants={fadeIn} initial="hidden" animate="visible" className="text-[3.5rem] sm:text-[5rem] md:text-[8rem] lg:text-[10rem] font-bold tracking-tighter leading-[0.85] text-white whitespace-nowrap">
+                <motion.h1 variants={fadeIn} initial="hidden" animate="visible" className="text-[2.5rem] sm:text-[4rem] md:text-[8rem] lg:text-[10rem] font-bold tracking-tighter leading-[0.85] text-white">
                   Créer au-Delà
                 </motion.h1>
 
-                <div className="w-full flex flex-col md:flex-row justify-between items-start md:items-end mt-4 md:mt-0 gap-8 md:gap-0">
-                  <motion.div variants={fadeIn} initial="hidden" animate="visible" className="pt-4 md:pt-0 pb-2 md:pb-4 lg:pb-8">
-                    <p className="text-gray-400 text-sm md:text-base leading-relaxed max-w-sm md:max-w-md">
+                <div className="w-full flex flex-col md:flex-row justify-between items-start md:items-end mt-3 md:mt-0 gap-6 md:gap-0">
+                  <motion.div variants={fadeIn} initial="hidden" animate="visible" className="pt-3 md:pt-0 pb-2 md:pb-4 lg:pb-8">
+                    <p className="text-gray-400 text-[13px] sm:text-sm md:text-base leading-relaxed max-w-[280px] sm:max-w-sm md:max-w-md">
                       Des sites web sur-mesure qui transforment vos visiteurs en clients. Design haut de gamme, performance technique et accompagnement de A à Z — dans l'Yonne et partout en France.
                     </p>
-                    <a href="#contact" className="inline-block mt-5 px-7 py-3 bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white font-semibold rounded-full text-sm hover:from-violet-500 hover:to-fuchsia-500 transition-all duration-300 shadow-lg shadow-violet-900/30">
+                    <a href="#contact" className="inline-block mt-4 sm:mt-5 px-6 sm:px-7 py-2.5 sm:py-3 bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white font-semibold rounded-full text-xs sm:text-sm hover:from-violet-500 hover:to-fuchsia-500 transition-all duration-300 shadow-lg shadow-violet-900/30">
                       Demander un devis gratuit
                     </a>
                   </motion.div>
 
-                  <motion.span aria-hidden="true" variants={fadeIn} initial="hidden" animate="visible" className="text-[3.5rem] sm:text-[5rem] md:text-[8rem] lg:text-[10rem] font-bold tracking-tighter leading-[0.85] text-white flex items-center gap-4 md:gap-8 justify-end w-full md:w-auto">
-                    de l'<span className="font-serif italic font-normal tracking-tight pr-4 md:pr-12">Ordinaire</span>
+                  <motion.span aria-hidden="true" variants={fadeIn} initial="hidden" animate="visible" className="text-[2.5rem] sm:text-[4rem] md:text-[8rem] lg:text-[10rem] font-bold tracking-tighter leading-[0.85] text-white flex items-center gap-2 sm:gap-4 md:gap-8 justify-start md:justify-end w-full md:w-auto">
+                    de l'<span className="font-serif italic font-normal tracking-tight pr-2 sm:pr-4 md:pr-12">Ordinaire</span>
                   </motion.span>
                 </div>
               </div>
